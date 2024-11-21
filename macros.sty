@@ -1,0 +1,251 @@
+\ProvidesPackage{macros}[2024/07/24 Random macros for my notes on Hilbert's programme]
+\newif\ifscreen\screentrue
+\newif\ifmobile\mobilefalse
+\newif\ifprint\printfalse
+\newif\ifcolor\colortrue
+
+% If you are going to print out these notes onto paper, and you can
+% print two-sided, then pass the [print] option.
+\DeclareOption{print}{
+  \screenfalse
+  \mobilefalse
+  \printtrue
+}
+% The default option is that we are viewing it on the screen. For
+% completeness, [screen] option is provided, but it does nothing.
+\DeclareOption{screen}{
+  \screentrue
+  \mobilefalse
+  \printfalse
+}
+
+\DeclareOption{mobile}{
+  \mobiletrue
+  \screenfalse
+  \printfalse
+}
+
+\DeclareOption{color}{
+  \colortrue
+}
+
+\DeclareOption{nocolor}{
+  \colorfalse
+}
+
+\DeclareOption{black}{
+  \colorfalse
+}
+
+\ProcessOptions\relax
+
+\usepackage{amsmath,amssymb}
+
+\usepackage[textwidth=29pc, % amsbook, amsppt, amsart use 30pc,
+                            % knuth uses 29pc for TAOCP
+  textheight=54pc, % amsbook uses 50.5pc, taocp uses 45pc
+\ifmobile
+  top=2pc,
+  headheight=1pc,
+  headsep=1pc,
+  left=0.5pc, 
+  asymmetric,
+  paperwidth=30pc,
+  paperheight=58.6pc, % 54 + 2 + 2.1 = 58.1
+  %bottom=2.1pc, % = footskip for book class
+  %footskip=2.1pc,
+  %includeheadfoot,
+  % bottom=1pc,
+\else
+  top=6pc,
+  marginpar=12pc,
+  marginparsep=1pc,
+  paper=letterpaper,
+  % outer = 51 - 29 - 6 = 16
+  \ifscreen
+    left=6pc,
+    asymmetric,
+  \else
+    inner=6pc, % Note: should be 1.25in for 3-ring binders?
+  \fi
+\fi
+]{geometry}
+
+\usepackage{amsthm}
+
+%\usepackage{hyperref}
+\usepackage[nobottomtitles*]{titlesec}
+
+\RequirePackage{tocbibind}
+
+% when the default font is 10pt
+\let\eightpoint\footnotesize
+\let\ninepoint\small
+
+\usepackage{etoolbox}
+
+\RequirePackage{ifpdf}
+\ifpdf
+  \RequirePackage[pagebackref=true,
+    pdftex,
+  ]{hyperref}
+\else
+  \RequirePackage[pagebackref=true,
+    dvipdfmx,
+  ]{hyperref}
+\fi
+
+\hypersetup{hidelinks,
+  breaklinks,
+}
+
+% Mostly based off of amsbook
+\usepackage{enumitem}
+\setlist[enumerate]{label=(\arabic*),partopsep=0pt,itemsep=0pt,parsep=0pt,
+topsep=0pt, leftmargin=\parindent}
+
+
+% avoid resetting page number after title page, modified from book.cls
+\patchcmd{\titlepage}{\setcounter{page}\z@}{}{}{}
+
+% HACK for book.cls to show "\part*" in the TOC
+\pretocmd{\@spart}{\phantomsection\addcontentsline{toc}{part}{#1}}{}{}
+
+
+%%% Customize sections to resemble TAOCP
+\parindent=19pt % taocpmac, amsbook uses 18pt, plain.tex uses 20pt
+\font\titlefont=cmssbx10 scaled\magstep2
+\def\starred{}
+\def\starit{\def\starred{\llap{*}}}
+% nobottomtitles will move sections at the end of a page to the top of
+% the next page
+\let\og@bottomtitlespace\bottomtitlespace
+\def\resetbottomtitlespace{\global\let\bottomtitlespace\og@bottomtitlespace}
+\renewcommand{\bottomtitlespace}{5pc}
+\titleformat{\chapter}[display]
+            {\titlefont} % format
+            {\large\sffamily\spaceskip=10pt\MakeUppercase{\chaptertitlename} \thechapter} % label
+            {4pc} % sep 
+            {\filleft\MakeUppercase} % before
+\titleformat{name=\chapter,numberless}[display]
+            {\titlefont} % format
+            {} % label
+            {4pc} % sep
+            {\filleft} % before
+% Use the fact that a normal space is computed using font dimensions
+% see: https://tex.stackexchange.com/a/229642/14751
+\titleformat{\section}%[block]
+            {\bfseries\sffamily} % format
+            {\starred\S\thechapter\thesection\def\starred{}} % label
+            {2\fontdimen2\font plus\fontdimen3\font minus\fontdimen4\font} % sep
+            {\MakeUppercase} % before
+\titleformat{\subsection}%[block]
+            {\bfseries\sffamily} % format
+            {\starred\S\thechapter\thesection\thesubsection\def\starred{}} % label
+            {2\fontdimen2\font plus\fontdimen3\font minus\fontdimen4\font} % sep
+            {} % before
+
+\renewcommand\thechapter{\arabic{chapter}}
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\arabic{subsection})}
+
+\def\@addpunct#1{%
+  \relax\ifhmode
+    \ifnum\spacefactor>\@m \else#1\fi
+  \fi}
+\titleformat{\subsubsection}[runin]
+            {\normalfont\bfseries}%\sffamily} % format
+            {\starred\thesubsubsection.\def\starred{}} % label
+            {2\fontdimen2\font plus\fontdimen3\font minus\fontdimen4\font}
+            %{0.5em} % sep = \enspace
+            {} % before
+            [\@addpunct{.}]
+\newskip\xskipamount
+\xskipamount=7pt plus 3pt minus 4pt
+\titlespacing*{\chapter}{0pt}{0pt}{2pc plus 1 pc minus 1 pc}
+%\titlespacing*{\section}{0pt}{1cm plus 1pc minus 5pt}{\smallskipamount}
+\titlespacing*{\section}{0pt}{\bigskipamount}{\smallskipamount}
+\titlespacing*{\subsection}{0pt}{\bigskipamount}{\smallskipamount}
+\titlespacing*{\subsubsection}{0pt}{\medskipamount}{\xskipamount\ignorespaces}
+% \renewcommand\thesubsection{\thesection.\Alph{subsection}}
+
+% This makes sure that the table of contents points to the right page
+% https://tex.stackexchange.com/a/443729/14751
+\newcommand{\sectionbreak}{\phantomsection}
+\newcommand{\subsectionbreak}{\phantomsection}
+\newcommand{\subsubsectionbreak}{\phantomsection}
+
+%% IMPORTANT
+%% avoid resetting page number to 1
+\def\pagenumbering#1{\gdef \thepage {\csname @#1\endcsname \c@page }}
+
+
+%% For the screen and mobile versions, do not add extra blank pages
+%% (they don't matter for such readers).
+%\ifprint
+%\else
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{\clearpage}{}{}
+\patchcmd{\part}{\if@openright\cleardoublepage\else\clearpage\fi}{\clearpage}{}{}
+\patchcmd{\@endpart}{\newpage}{}{}{}
+%\fi
+
+% avoid resetting page number after title page, modified from book.cls
+\patchcmd{\titlepage}{\setcounter{page}\z@}{}{}{}
+
+%%% Theorems
+%% \usepackage{thms}
+
+%% \newremark{axiom}{Axiom}
+%% \newremark{code}{Code} % for code snippets
+%% \newremark{definition}{Definition}
+%% \newremark{example}{Example}
+%% \newremark{exercise}{Exercise}
+%% \newtheorem{proposition}{Proposition}
+%% \newtheorem{puzzle}{Puzzle}
+%% \newremark{remark}{Remark}
+%% \newtheorem{schema}{Schema}
+%% \let\scheme\schema
+%% \let\endscheme\endschema
+%% \newtheorem{theorem}{Theorem}
+
+\counterwithout{paragraph}{subsubsection}
+\counterwithin{paragraph}{chapter}
+
+%% \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+%%                                       {\medskipamount}%
+%%                                       {-1em}%
+%%                                       {\normalfont\normalsize\bfseries}}
+
+\let\pilcrow\P
+
+\titleformat{\paragraph}[runin]
+            {\normalfont\bfseries}%\sffamily} % format
+            {\starred\pilcrow\theparagraph.\def\starred{}} % label
+            {2\fontdimen2\font plus\fontdimen3\font minus\fontdimen4\font}
+            %{0.5em} % sep = \enspace
+            {} % before
+            [\@addpunct{.}]
+\titlespacing*{\paragraph}{0pt}{\medskipamount}{\xskipamount\ignorespaces}
+
+\titleformat{\subparagraph}[runin]
+            {\normalfont\bfseries}%\sffamily} % format
+            {\starred\pilcrow\thesubparagraph.\def\starred{}} % label
+            {2\fontdimen2\font plus\fontdimen3\font minus\fontdimen4\font}
+            %{0.5em} % sep = \enspace
+            {} % before
+            [\@addpunct{.}]
+\titlespacing*{\subparagraph}{0pt}{\medskipamount}{\xskipamount\ignorespaces}
+
+%\counterwithin{subparagraph}{paragraph}
+
+\setcounter{secnumdepth}{10}
+\setcounter{tocdepth}{3}
+
+\def\define#1{\textbf{``#1''}}
+
+% for book.cls, twosided
+\def\@evenhead{\thepage\hfil\slshape\footnotesize\leftmark}%
+\def\@oddhead{{\footnotesize\slshape\rightmark}\hfil\thepage}%
+
+
+\endinput

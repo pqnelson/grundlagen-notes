@@ -1,0 +1,1055 @@
+\chapter[Problem of Consistency]{The Problem of Consistency in Axiomatics as a Logical Decision Problem}
+
+\section{Formal Axiomatics}
+
+\subsection{Relationship of formal to contentual axiomatics; issue of
+  consistency; arithmetization}
+
+\paragraph{} The state of research in the foundations of mathematics
+is characterized by three kinds of investigations:
+\begin{enumerate}
+\item the development of the axiomatic method (especially with
+  applications to geometry);
+\item the founding/grounding/re-working of analysis with today's
+  rigorous methods;
+\item investigations into the foundations of number theory and set theory.
+\end{enumerate}
+
+\paragraph{Problem of the infinite} Hilbert and Bernays explain
+``because of new sharpened [more rigorous] methodological
+requirements'' we will be forced to address ``the deeper problem of
+the infinite in a new way''. But what, exactly, these ``new
+methodological requirements'' are remains vague.
+
+The ``problem of the infinite'' sounds strange to modern ears. David
+Hilbert's ``On the infinite'' discusses this problem in the first four
+paragraphs, namely that infinity could re-appear in unexpected ways.
+
+Hilbert and Bernays propose to address this ``problem'' through their
+investigation [treatment?] of axiomatics.
+
+\paragraph{The term ``Axiomatics''}
+The term ``axiomatics'' has a broad sense, and a narrow sense.
+In the broadest sense: the notions and presuppositions are stated
+first, then the theory is developed logically. Examples of this
+``broader'' style of axiomatics include: Euclid's \textit{Elements},
+Newton's mechanics, and Clausius's thermodynamics.
+
+\paragraph{} Hilbert's \textit{Foundations of Geometry} (1899)
+develops the notion of axiomatics further. From the
+``factual and conceptual'' [representational?] subject matter which
+gives us the basic notions of the theory, we retain only the essence
+of the theory formulated as axioms, and ignore [abstract away] all
+other content.
+
+There is a further quality which gives us the narrowest sense of
+axiomatics, which Hilbert and Bernays call \define{Existential Form}
+of axiomatics.
+For them, this distinguishes the ``axiomatic method'' from the
+``constructive or genetic method'' for grounding a theory.
+
+\subparagraph{Genetic method}
+The constructive/genetic method ``introduces the objects of a theory
+as a genus of things''.
+
+The notion of a ``genus'', Brouwer conventionally calls
+``species''. (This is an issue of translation: the German word for
+Brouwer's ``species'' is \textit{Gattung}, which translates to English
+as ``genus''. Translation seldom forms a commutative diagram.)
+
+Hilbert and Bernays contrast this with the axiomatic method, which
+works with a \emph{fixed} ``domain of discourse'' given at the outset.
+This is what predicates ``work on''.
+
+\subparagraph{About ``existential''}\label{subpar:ch1:existential-form:about-existential}
+We should note that the notion of ``existential'' (in
+``existential axiomatics''), Bernays writes in a later article (in
+1950) that ``Thus, in mathematics, we have no reason to to assume any
+meaning of `existence' that would be fundamentally different from
+that of `the validity of axiomatic relations'.''
+
+Consequently, we should bear in mind the discussion of ``existence''
+and ``existential'' (as adjectives for a theory or formalism) carries
+this connotation of ``the validity of axiomatic relations''.
+
+\paragraph{}
+Hilbert and Bernays stress that the assumption that there exists a
+``domain of individuals'' is an additional axiom (implicit, seldom
+explicitly stated) for formal axiomatics, except in the ``trivial''
+situation where the domain of individuals is finite. That is, when
+there are only finitely many individuals in the domain.
+
+\paragraph{Formal Axiomatics}
+This ``sharpened'' [more sophisticated? more refined? more rigorous]
+form of axiomatics, which ignores its subject matter and requires the
+existential form, Hilbert and Bernays refer to as merely
+\define{Formal Axiomatics}.
+
+The characteristic requirement of formal axiomatics: we need a
+\emph{proof of consistency}. Recall (\pilcrow\ref{subpar:ch1:existential-form:about-existential})
+a proof of consistency amounts to proving the existence of a domain of
+discourse.
+
+On the other hand, the \emph{contentual axiomatics} introduces the basic
+notions by referring to common experience and presents its ``first principles''
+either as evident facts (which you can verify for yourself) or
+formulates them as extracts from ``experience-complexes''.
+
+So contentual axiomatics supposes we have stumbled across the correct
+laws of nature, and will reinforce this belief with the success of the
+theory. (This seems like the approach most natural sciences take.)
+
+\paragraph{}
+Just as contentual axiomatics requires certain kinds of evidence,
+formal axiomatics too requires certain kinds of evidence for (a)
+pursuing deductions, and (b) the proof of consistency.
+
+The fundamental difference is that contentual axiomatics allow
+evidence based on a certain special kind of epistemic status, whereas
+formal axiomatics has abstracted this all away and therefore requires
+``the same kind'' of evidence.
+
+\paragraph{}
+What is the relation between contentual and formal axiomatics?
+
+\paragraph{}
+Formal axiomatics requires contentual axiomatics as a necessary
+adjunct (``adjunct'' being my choice of words). How else would we
+determine the intended interpretation?
+
+Hilbert and Bernays phrase it as: contentual axiomatics gives us
+guidance for determining the ``right formalism'', and some
+instructions for how to apply a theory to a ``domain of actuality''.
+
+\paragraph{}
+We cannot rest content with contentual axiomatics, because in science
+we are not reproducing every aspect of the actual state-of-affairs in
+its entirety, but instead we work with a simplifying
+idealization. (This works for science because we successively refine
+our understanding.)
+
+Rather, a theory formulated using contentual axiomatics does not get a
+grounding from the self-evident truth of its axioms, nor from
+experience. Instead, it receives a grounding only by showing its
+idealization is free from contradiction.
+
+\paragraph{}
+We're therefore forced to investigate the consistency of such
+theoretical systems without considering ``actuality'' [empirical evidence].
+And we thus arrive at the standpoint of formal axiomatics.
+
+\paragraph{Method of Arithmetization}
+Hilbert and Bernays introduce the ``method of arithmetization'':
+\begin{itemize}
+\item the objects of the theory is translated to numbers or number systems;
+\item the axioms of the theory is translated to equations or inequalities;
+\item the result of translating the axioms results in equations or
+  inequalities which are arithmetical identities or provable results.
+\end{itemize}
+This method boils down to proving consistency of a theory assuming
+that arithmetic is consistent [``the validity of arithmetic''].
+``And so we must ask what kind of validity this amounts to,'' Hilbert and Bernays ask.
+
+(I suspect this is also why Hilbert's metatheory is a finitary,
+intuitive, contentual number theory: it is impossible to believe it
+inconsistent.)
+
+\paragraph{}
+Can't we \emph{directly} prove the consistency of a theory?
+
+Hilbert and Bernays will attempt to answer this question, while using
+it as a pretext for introducing ``logical symbolism'' \emph{and}
+simultaneously getting a better idea for the general form of the
+problem of consistency.
+
+\subsection{Geometrical axioms as an example}
+
+\paragraph{Example: Planar geometry}
+We start with the example of \emph{plane geometry}.
+The domain of individuals will consist entirely of points.
+
+There are two primitive relations.
+\begin{enumerate}
+\item Instead of the relation ``$x$ and $y$ lie on a straight line $g$'', we
+will take the relation
+\begin{equation*}
+  Gr(x,y,z)\sim%
+\begin{pmatrix}
+  \mbox{$x$, $y$, $z$ lie in}\\
+  \mbox{a straight line}
+\end{pmatrix}
+\end{equation*}
+\item The second primitive relation encodes our intuition of
+``between-ness'':
+\begin{equation*}
+Zw(x,y,z)\sim%
+\begin{pmatrix}
+  \mbox{$x$ lies in}\\
+  \mbox{between $y$ and $z$}
+\end{pmatrix}
+\end{equation*}
+\end{enumerate}
+We also will take equality $=$ for a primitive notion of identity,
+writing $x=y$ for ``$x$ is identical to $y$''.
+
+\paragraph{Quantifier notation}
+Now, we can introduce the notation for quantifiers. Hilbert and
+Bernays write this as, for a unary predicate $P[x]$,
+\begin{equation*}
+  \begin{array}{rl}
+\forall{x}{P[x]}&\mbox{means ``All $x$ have the property $P[x]$''}\\
+\exists{x}{P[x]}&\mbox{means ``Some $x$ has the property $P[x]$''}
+  \end{array}
+\end{equation*}
+The $\forall{x}$ is the universal quantifier, the $\exists{x}$ is the
+existential quantifier, and the variable $x$ appearing in either one
+is considered a \emph{bound variable} (Hilbert and Bernays's term).
+
+\paragraph{Logical connectives}
+Hilbert and Bernays introduce the usual logical connectives:
+\begin{enumerate}
+\item $A\land B$ means ``$A$ and $B$ both hold''
+\item $A\lor B$ means ``either $A$ or $B$ (or both) hold'' (Hilbert
+  and Bernays write: ``or in the sense of \textit{vel\/}'')
+\item $\Not{A}$ means ``not $A$''; Hilbert and Bernays write ``$x\neq y$''
+for ``$\Not{x=y}$''.
+\end{enumerate}
+
+\paragraph{Implication}
+The connective ``$\implies$'' is used to indicate logical
+implication. Specifically ``if the first proposition holds, then so
+does the second''.
+
+Specifically $\meta{A}\implies\meta{B}$ is false if and only if
+$\meta{A}$ is true and $\meta{B}$ is false. Otherwise,
+$\meta{A}\implies\meta{B}$ is true. (NOTE: Hilbert and Bernays appear
+to use fraktur letters $\meta{A}$, $\meta{B}$ for metavariables.)
+
+\paragraph{}
+The universal quantifier and implication combines in the intended
+way. The example given is
+\begin{equation*}
+\Forall{x}\Forall{y}{(\meta{A}(x,y)\implies\meta{B}(x,y))}.
+\end{equation*}
+This means ``For any $x$ and $y$, if $\meta{A}(x,y)$ holds, then so
+too does $\meta{B}(x,y)$ hold''.
+
+\paragraph{}
+Hilbert and Bernays give precedence to the connectives, which differs
+than modern conventions: $\implies$ has lower precedence than $\land$
+(as is the case in modern conventions), but $\land$ has lower
+precedence than $\lor$ (contrary to modern conventions).
+
+The quantifiers have higher precedence than connectives. But
+universal quantification has lower precedence than existential
+quantification.
+
+Wherever there may be ambiguity, parentheses will be inserted.
+
+\paragraph{}
+Now we can begin presenting the axioms of planar geometry.
+
+\paragraph{}\label{paragraph:ch1:planar-geometry-axiom-start}
+Note that this presentation is not identical to the one found in
+Hilbert's \textit{Foundations of Geometry} (1899).
+
+\begin{center}
+  I. Axioms of Connection
+\end{center}
+
+\begin{enumerate}
+\item $\Forall{x}\Forall{y}{Gr(x,x,y)}$ (``for all $x$ and $y$ we have
+  $x$, $x$, $y$ lie on a straight line'')
+\item $\Forall{x}\Forall{y}\Forall{z}{(Gr(x,y,z)\implies Gr(y,x,z)\land Gr(x,z,y))}$
+(``whenever $x$, $y$, $z$ lie on a straight line, then so too do $y$,
+  $x$, $z$ and $x$, $z$, $y$'')
+\item $\Forall{x}\Forall{y}\Forall{z}\Forall{u}{(Gr(x,y,z)\land
+  Gr(x,y,z)\land u\neq z\implies Gr(x,z,u))}$
+\item\label{axiom:planar-geometry:4} $\Exists{x}\Exists{y}\Exists{z}\Not{Gr(x,y,z)}$ (There exists
+  $x$, $y$, $z$ which do not lie on the same line)
+\end{enumerate}
+
+\paragraph{}
+These axioms loosely correspond to Axioms I found in Hilbert's book on
+geometry.
+
+\begin{center}
+  II. Axioms of Order
+\end{center}
+
+\begin{enumerate}[resume]
+\item $\Forall{x}\Forall{y}\Forall{z}{(Zw(x,y,z)\implies Gr(x,y,z))}$
+\item $\Forall{x}\Forall{y}\Not{Zw(x,y,y)}$
+\item $\Forall{x}\Forall{y}\Forall{z}{(Zw(x,y,z)\implies Zw(x,z,y)\land\Not{Zw(y,x,z)})}$
+\item\label{axiom:planar-geometry:II:4} $\Forall{x}\Forall{y}{(x\neq y\implies\Exists{z}{Zw(x,y,z)})}$
+  (for any distinct points $x$ and $y$, there exists a third point $z$
+  such that $x$ lies between $y$ and $z$)
+\item\label{axiom:planar-geometry:II:5} $\Forall{x}\Forall{y}\Forall{z}\Forall{u}\Forall{v}{\bigl(\Not{Gr(x,y,z)}\land Zw(u,x,y)\land\Not{Gr(v,x,y)}\land\Not{Gr(z,u,v)}\implies\Exists{w}{(Gr(u,v,w)\land Zw(u,x,y)\lor\Not{Gr(v,x,y)})}\bigr)}$
+\end{enumerate}
+
+\paragraph{}
+These axioms in group II roughly correspond to Hilbert (1899)'s Axioms II.
+
+\begin{center}
+  III. Axioms of Parallels
+\end{center}
+
+\paragraph{}
+We omit the axioms of congruences, since the axiom of parallels is
+stronger. Informally stated, ``For any line passing through two
+points, for any point not on the line, there exists a line passing
+through the third point which does not intersect the original line.''
+
+\paragraph{Notation}
+We introduce the notational abbreviation
+\begin{equation*}
+par(x,y;u,v) := \Not{\Exists{w}{(Gr(x,y,w)\land Gr(u,v,w))}}
+\end{equation*}
+(the ``$:=$'' symbol is mine, not Hilbert and Bernays's).
+
+\paragraph{}
+This informally means ``There is no point $w$ which lies on the line
+passing through $x$ and $y$, and also lies on the line passing through
+$u$ and $v$.''
+
+\paragraph{Axiom}
+The axiom of parallels now reads:
+\begin{equation*}
+\Forall{x}\Forall{y}\Forall{z}\left(\Not{Gr(x,y,z)}\implies\Exists{u}{\Bigl(par(x,y;z,u)\land\Forall{v}{\bigl(par(x,y;u,v)\implies Gr(x,u,v)\bigr)}\Bigr)}\right)
+\end{equation*}
+
+
+\paragraph{}
+If we consider all the axioms presented here, we could conjoin them
+altogether into one giant axiom which Hilbert and Bernays write as
+\begin{equation*}
+\meta{A}(Gr,Zw).
+\end{equation*}
+
+\paragraph{}
+Similarly, we can write any theorem about planar geometry as a formula
+involving only $Gr$ and $Zw$ as
+\begin{equation*}
+\meta{S}(Gr,Zw)
+\end{equation*}
+(That's a fraktur ``S'', by the way, since the German word for
+proposition is \textit{Satz\/}.)
+
+\paragraph{}
+Yet everything we have presented has been presented using
+\emph{contentual axiomatics}. And in contentual axiomatics, every
+basic relation is viewed we experience, or intuitively understand
+contentually, and thus ``as something contentually determines'' about
+which the sentences of the theory contain assertions.
+
+\subsection{Abstract logical formulation of the axiomatics}
+
+\paragraph{}
+In formal axiomatics, the basic\footnote{``Basic'' as in ``primitive notion''.} relations
+are not contentually determined from the start.
+Instead, they ``receive their determination only \emph{implicitly} from
+the axioms.''
+
+It seems that Hilbert and Bernays have a nascent notion of proof-proof
+theoretic semantics.
+
+\paragraph{}
+In the example of planar geometry, when we used phrases like ``lies between''
+or ``lies on a line containing'', these are just informal heuristics
+to aid the reader.
+
+In reality, the primitive relations play the role of distinct
+predicate variables.
+
+\paragraph{Terminology}
+Hilbert and Bernays use the word ``predicate'' in a broader sense to
+refer to unary predicates, binary predicates, \dots, $n$-ary predicates.
+
+\paragraph{}
+So far, in axiomatic geometry, we have introduced two distinct
+ternary predicate variables $R(x,y,z)$ and $S(x,y,z)$.
+
+\paragraph{}
+The axiom system consists of a ``requirement'' (stipulation?) on two
+such predicates as satisfying the formula $\meta{A}(R,S)$.
+
+\subparagraph{Equality}
+Further, the relation ``$x=y$'' cannot be determined axiomatically but
+contentually. This does not contradict anything from the methodological
+perspective Hilbert and Bernays advocate.
+
+The contentual determination of identity does not depend on ``any
+particular conception in'' [or, ``the conceptual content of''] the
+field of axiomatic investigation. Rather, it concerns distinguishing
+individuals [in the domain of discourse].
+
+The idea that there's something \emph{semantic} to equality/identity
+is not surprising. Tarski discovered the same thing.
+
+\paragraph{}
+From this perspective, a sentence $\meta{S}(Gr,Zw)$ has the following
+interpretation: for \emph{any} predicates $R(x,y,z)$ and $S(x,y,z)$
+satisfying $\meta{A}(R,S)$, we necessarily have $\meta{S}(R,S)$ hold
+as well. That is to say,
+\begin{equation*}
+\meta{A}(R,S)\implies\meta{S}(R,S)
+\end{equation*}
+is a true proposition. This transforms a theorem from planar geometry
+into a sentence of predicate logic.
+
+\paragraph{Consistency}
+The problem of consistency can be phrased as such: are there
+predicates $R$ and $S$ satisfying $\meta{A}(R,S)$? Or are there no
+such predicates? That is, $\meta{A}(R,S)\implies\Not{\meta{A}(R,S)}$
+for every binary predicates $R$ and $S$?
+
+Consistency of planar geometry becomes a question of pure logic.
+
+\section{The Entscheidungsproblem}
+
+\subsection{Validity and satisfiability}
+
+\paragraph{Problem statement}
+Is there a decidable procedure for determining if a formula is valid
+or satisfiable?
+
+This is the Entscheidungsproblem, which Church answered in the negative.
+
+\paragraph{}
+The formulas Hilbert and Bernays work with have no free variables, and
+are built `in the obvious way'.
+
+\paragraph{Definitions}
+\begin{enumerate}
+\item A formula is called \define{Valid} if it is a true proposition
+  for every ``determination of predicates''.
+\item A formula is called \define{Satisfiable} if it is a true
+  proposition for \emph{some} ``determination of predicates''.
+\end{enumerate}
+
+\paragraph{Examples}
+Some valid formulas include:
+\begin{itemize}
+\item $\Forall{x}F(x)\;\land\;\Forall{x}G(x)\quad\implies\quad\Forall{x}{(F(x)\land G(x))}$
+\item $\Forall{x}P(x,x)\quad\implies\quad\Forall{x}\Exists{y}{P(x,y)}$
+\item $\Forall{x}\Forall{y}\Forall{z}{\bigl(Q(x,y)\land y=z\implies Q(x,z)\bigr)}$
+\end{itemize}
+
+\paragraph{Examples}
+Some satisfiable formulas include:
+\begin{itemize}
+\item $\Exists{x}(F(x))\;\land\;\Exists{x}{\Not{(F(x))}}$
+\item $\Forall{x}\Forall{y}{\bigl(P(x,y)\land P(y,x)\;\implies\; x=y\bigr)}$
+\item $\Forall{x}\Exists{y}{Q(x,y)}\quad\land\quad\Exists{y}{\Forall{x}\Not{Q(x,y)}}$
+\end{itemize}
+
+\paragraph{}
+To see this, consider the following examples:
+\begin{itemize}
+\item $F(x)$ means ``$x$ is even''
+\item $P(x,y)$ means ``$x\leq y$''
+\item $Q(x,y)$ means ``$x\leq y$ and $y\neq 1$''
+\end{itemize}
+
+\paragraph{}
+Simultaneous with a ``determination of predicates'', we must fix a
+``domain of individuals''.
+
+\subparagraph{``Hidden variable''?} Hilbert and Bernays explain that
+the domain of individuals plays a role analogous to a ``hidden variable''.
+The exact meaning of this eludes me at the moment.
+
+\subparagraph{Invariance of domain of individuals}
+If we have a bijection from one domain of individuals to another, then
+nothing substantially changes. Therefore, only the \emph{number of individuals}
+is the important property of the domain of individuals.
+
+\paragraph{Questions}
+There are three questions we can meaningfully ask:
+\begin{enumerate}
+\item The validity of a formula for all domains of individuals (resp.,
+  the satisfiability for some domain of individuals)?
+\item The question of validity (resp., satisfiability) for a given
+  domain of individuals?
+\item For which domains of individuals is a formula valid (resp., satisfiable)?
+\end{enumerate}
+
+\subsection{Decision for finite domains of individuals}
+
+\paragraph{Empty domain excluded}
+Hilbert and Bernays exclude domains of individuals containing zero
+individuals. 
+
+\paragraph{Graphs of predicates}
+We also need to consider ``graphs'' of predicates, i.e., enumerating
+the truth-value for predicates for every possible combination of
+individuals.
+
+\paragraph{}
+For finite domains, this boils down predicate logic to a purely
+combinatorial state of affairs.
+
+\paragraph{}
+If we have a domain with $n$ individuals, then the graph for a $k$-ary
+predicate requires $n^{k}$ rows. This also means that there are
+$2^{n^{k}}$ possible distinct $k$-ary predicates (since each row could
+be true or false).
+
+\paragraph{}
+If we have a formula with predicates $R_{1}$, \dots, $R_{t}$ each with
+arity $k_{1}$, \dots, $k_{t}$ (respectively), then we see there are
+$2^{(n^{k_{1}}+\dots+n^{k_{t}})}$ distinct possible graphs for such a formula.
+
+If our axiomatic system has basic predicates $R_{1}$, \dots, $R_{t}$ each with
+arity $k_{1}$, \dots, $k_{t}$ (respectively), then there are
+$2^{(n^{k_{1}}+\dots+n^{k_{t}})}$ possible realizations of the system.
+Hilbert and Bernays call each possibility a \define{Predicate System}.
+
+\paragraph{}
+Validity for a formula means that for all $2^{(n^{k_{1}}+\dots+n^{k_{t}})}$
+predicate systems, the formula is always true.
+
+Satisfiability for a formula means that there exists one out of the
+$2^{(n^{k_{1}}+\dots+n^{k_{t}})}$ possible predicate systems such that
+the formula is true.
+
+\paragraph{Examples}
+Consider the formulas:
+\begin{enumerate}
+\item $\Forall{x}{P(x,x)}\quad\implies\quad\Forall{x}\Exists{y}{P(x,y)}$
+\item $\Forall{x}\Forall{y}{(P(x,y)\land P(y,x)\quad\implies\quad x=y)}$
+\end{enumerate}
+We will check the first formula is valid, the second formula is satisfiable.
+
+\paragraph{}
+We work with a domain with two individuals, which we denote by $1$ and $2$.
+Here our axiomatic system has $t=1$ predicate $P(-,-)$ which has
+binary (i.e., $k_{1}=2$). Since there are two individuals, $n=2$, and
+that means that we have $2^{(n^{k_{1}})}=2^{(2^{2})}=16$ possible
+predicate systems.
+
+\paragraph{}
+Observe then that $\Forall{x}{P(x,x)}$ abbreviates
+\begin{equation*}
+P(1,1)\land P(2,2).
+\end{equation*}
+Similarly, $\Forall{x}\Exists{y}{P(x,y)}$ abbreviates
+\begin{equation*}
+(P(1,1)\lor P(1,2))\land(P(2,1)\lor P(2,2)).
+\end{equation*}
+Then the first formula we're considering corresponds to:
+\begin{equation*}
+\bigl(P(1,1)\land P(2,2)\bigr)\quad\implies\quad\bigl((P(1,1)\lor P(1,2))\land(P(2,1)\lor P(2,2))\bigr).
+\end{equation*}
+
+\paragraph{}
+The implication is true for those ``predicate systems'' where
+\begin{equation*}
+P(1,1)\land P(2,2)
+\end{equation*}
+is true. After all, this is just $A\land B\land[(A\land B)\implies((A\lor C)\land(B\lor D))]$
+(write down its truth table, square brackets used for clarity).
+
+Similarly, when
+\begin{equation*}
+P(1,1)\land P(2,2)
+\end{equation*}
+is false but
+\begin{equation*}
+(P(1,1)\lor P(1,2))\land(P(2,1)\lor P(2,2))
+\end{equation*}
+is true, we see the formula is true. To see this, write down the truth
+table for $P(1,1)$, $P(1,2)$, $P(2,1)$, $P(2,2)$ and select the
+rows for which $P(1,1)\land P(2,2)$ is false but
+\begin{equation*}
+(P(1,1)\lor P(1,2))\land(P(2,1)\lor P(2,2))
+\end{equation*}
+is true.
+
+\paragraph{Second formula}
+The second of the two examples we're considering,
+$\Forall{x}\Forall{y}{(P(x,y)\land P(y,x)\quad\implies\quad x=y)}$,
+over the same domain with two individuals can be expanded to the
+formula:
+\begin{equation*}
+\begin{array}{rcl}
+(P(1,1)\land P(1,1)\implies 1=1)&\land&(P(1,2)\land P(2,1)\implies 1=2)\quad\land\\
+(P(2,1)\land P(1,2)\implies 2=1)&\land&(P(2,2)\land P(2,2)\implies 2=2).
+\end{array}
+\end{equation*}
+
+\paragraph{}
+The first and last conjunctand is always true (since $1=1$ and $2=2$
+always is true). So this is really boiling down to
+\begin{equation*}
+(P(1,2)\land P(2,1)\implies 1=2)\land(P(2,1)\land P(1,2)\implies 2=1).
+\end{equation*}
+But since $2\neq1$ (and $1\neq 2$), we need $P(1,2)\land P(2,1)$ to be false.
+
+\paragraph{}
+Therefore, the situations when the formula is satisfiable boils down
+to examining when $P(1,2)\land P(2,1)$ is false. When $P(1,2)\land P(2,1)$
+evaluates to ``true'', the entire formula is false. But there are 4
+situations when $P(1,2)\land P(2,1)$ is false, and those 4 situations
+describe when the formula is satisfiable.
+
+\paragraph{}
+These examples demonstrate the combinatorial character of the
+Entscheidungsproblem on a finite domain of individuals.
+
+\subparagraph{}
+Observe for finite domains of individuals that a formula $\meta{F}$ is
+valid if and only if $\Not{\meta{F}}$ is unsatisfiable.
+
+\subparagraph{}
+Similarly, for a finite domain of individuals, a formula $\meta{F}$ is
+satisfiable if and only if $\Not{\meta{F}}$ is not valid. If
+$\Not{\meta{F}}$ is valid, then there is no predicate system for which
+$\Not{\Not{\meta{F}}}$ is true (and therefore $\meta{F}$ cannot be satisfiable).
+
+\subsection{Method of exhibition}
+
+\paragraph{}
+We return to our problem of consistency, and we assume that we have
+formed a single formula $\meta{A}$ for our axioms conjoined together.
+
+\paragraph{}
+For a given domain of individuals, the questions of satisfiability and
+validity boil down to testing it out (at least, in principle).
+
+If we have determined a formula is valid on the given domain of
+individuals, then we may treat it as a ``model'' (their term) for the
+theory where the axioms are satisfied. This also proves the
+consistency of the theory. Hilbert and Bernays calls this the
+``method of exhibition''.
+
+\paragraph{}
+As an example, let us consider the axioms for planar geometry (from
+\pilcrow\ref{paragraph:ch1:planar-geometry-axiom-start} \textit{et seq.}).
+We need to replace Axiom~\ref{axiom:planar-geometry:4} with
+something weaker.
+\begin{itemize}
+\item[(4')] $\Exists{x}\Exists{y}(x\neq y)$ (there are at least two
+  distinct points)
+\end{itemize}
+
+\paragraph{}
+Hilbert and Bernays drop the Axiom of
+order~\ref{axiom:planar-geometry:II:5} and replace it with something
+else. First, we modify Axiom~\ref{axiom:planar-geometry:II:4} to
+become
+\begin{itemize}
+\item[(8')] $\Forall{x}\Forall{y}{(x\neq y\quad\implies\quad \Exists{z}{(Zw(z,x,y))}\;\land\;\Exists{z}{(Zw(x,y,z))})}$
+\end{itemize}
+Then Hilbert and Bernays add the axiom
+\begin{itemize}
+\item[(9')] $\Forall{x}\Forall{y}\Forall{z}{(x\neq y\neq z\quad\implies\quad Zw(x,y,z)\land Zw(y,z,x)\land Zw(z,x,y))}$
+\end{itemize}
+However, Claus-Peter Wirth point out this is a flawed formalization of
+the intended axiom
+\begin{itemize}
+\item[(9'')] $\Forall{x}\Forall{y}\Forall{z}{(x\neq y\neq z\land Gr(x,y,z)\quad\implies\quad Zw(x,y,z)\land Zw(y,z,x)\land Zw(z,x,y))}$
+\end{itemize}
+
+\paragraph{}
+The axiom of parallels remains unchanged. When we conjoin them
+altogether, we get a formula $\meta{A}'(R,S)$ whereas we formerly had
+$\meta{A}(R,S)$.
+
+Veblen demonstrates that there exists a finite model consisting of 5
+distinct individuals for $\meta{A}'(R,S)$. This is done as follows:
+$Gr(x,y,z)$ is always true. And $Zw$ is determined according to the
+three rule:
+\begin{enumerate}
+\item For any triple $x$, $y$, $z$ where at least two of the
+  individuals coincide, we have $Zw(x,y,z)$ be false. This means there
+  are $\binom{5}{3}\cdot 3! = 10\cdot 6 = 60$ possible triples where $Zw(x,y,z)$
+  could be true
+\item Among the possible permutations of these 60, there are 6
+  orderings to each of the $\binom{5}{3}$ ways of choosing 3 distinct
+  individuals among the 5 of the domain. Among these 6 orderings, we
+  insist that 2 will give $Zw$ being true, and the other 4 give $Zw$
+  being false.
+\item For any distinct pair of individuals, they appear as the first
+  two entries in a triplet where $Zw$ is true \emph{and} as the last
+  two entries in a triplet where $Zw$ is true.
+\end{enumerate}
+
+\paragraph{}
+Hilbert and Bernays work out a bit of the combinatorics of the cases
+in this paragraph. But the first condition (if there's a duplicate
+among $x$, $y$, $z$, then $Zw(x,y,z)$ is false) is ``just stipulated''.
+
+They deduce that there are 20 triples among the possible 60 where $Zw$
+is true. Furthermore, they are the triplets
+\begin{enumerate}
+\item $(1,2,5)$
+\item $(1,5,2)$
+\item $(1,3,4)$
+\item $(1,4,3)$
+\end{enumerate}
+and all those obtained from them by applying the cyclic permutation $(1\;2\;3\;4\;5)$.
+
+\paragraph{}
+``It's easy to see this is consistent'', we're told. And it's all done
+by the method of exhibition.
+
+\paragraph{}
+This is the method of exhibition, and it's really useful for
+independence proofs.
+
+If we want to prove $\meta{S}$ is independent of the axiom system
+$\meta{A}$, then we just prove $\Not{\meta{S}}\land\meta{A}$ is consistent.
+
+\section{The issue of consistency for infinite domains of individuals}
+
+\subsection{Formulas that are not satisfiable in the infinite; the
+  number series as a model}
+
+\paragraph{}
+So, we've seen the method of exhibition and its usefulness.
+
+But for infinite domains of individuals, can we still use the method
+of exhibition? It's not clear immediately (one way or the other; i.e.,
+that it's applicable or not).
+
+However, it is clear that the ``predicate systems'' (as extended truth
+tables) runs into difficulties. Hilbert and Bernays tell us the
+collection of possible predicate systems is no longer a
+``comprehensible-manifold'' [Ger.: \textit{Mannigfaltigkeit\/}, a
+Kantian term].  %                          Mannigfaltigkeit
+
+\subparagraph{Manifold}
+It also seems to be ``multiplicity''. In Kant's \textit{Critique of Pure Reason},
+it appears in 36 places; e.g.,
+\begin{quote}
+Further, this science cannot be terribly extensive, for it does not deal
+with objects of reason, whose multiplicity [\textit{Mannigfaltigkeit\/}]
+is infinite, \dots (B23)
+\end{quote}
+By my count, it appears 45 times in Kant's \textit{Prolegomena}.
+
+I am not sure what to make of this.
+
+\subparagraph{Example}
+Not one to be deterred or discouraged, Hilbert and Bernays offer the
+following example: consider the axiomatic system consisting of a
+binary predicate $R$ and the following axioms:
+\begin{enumerate}
+\item $\Forall{x}\Not{R(x,x)}$
+\item $\Forall{x}\Forall{y}\Forall{z}{(R(x,y)\land R(y,z)\implies R(x,z)}$
+\item $\Forall{x}\Exists{y}{R(x,y)}$
+\end{enumerate}
+
+\paragraph{}
+Axioms (1) and (3) combine to tell us that for each $x$, there exists
+a $y\neq x$ such that $R(x,y)$.
+
+So if we know there is at least one object $a$ in our domain of
+individuals, we can immediately infer there exists a $b\neq a$ such
+that $R(a,b)$. But this observation cascades iteratively: there is a
+$c\neq a$, $c\neq b$ such that $R(b,c)$, and so on and so forth. In
+fact, there are infinitely many individuals in the domain of discourse
+because this process does not terminate.
+
+We can prove consistency by taking the integers as the domain of
+individuals, and interpret $R(x,y)$ as ``$x$ is strictly less than $y$''.
+
+
+\paragraph{Second Example}
+Consider the axioms
+\begin{enumerate}
+\item $\Exists{x}\Forall{y}\Not{S(y,x)}$
+\item $\Forall{x}\Forall{y}\Forall{u}\Forall{v}{(S(x,u)\land S(y,u)\land S(v,x)\implies S(v,y)}$
+\item $\Forall{x}\Exists{y}{S(x,y)}$
+\end{enumerate}
+
+\paragraph{}
+We can show that this is not satisfiable on a finite domain of
+individuals by combining axioms (1) and (3) together again.
+
+If we interpret $S(x,y)$ as ``$y$ is the immediate successor of $x$'',
+then we have a model of this system: the natural numbers\footnote{That
+is to say, the non-negative integers.}.
+
+\paragraph{Observation}
+In these two examples, we see that the method of exhibition does not
+prove the consistency of the axiom systems. Instead, it ``merely''
+\emph{reduces consistency down to the consistency of number theory}.
+
+\subparagraph{Critical property}
+In the previous example, the method of exhibition required one
+critical property: the required properties of numbers were concretely
+verifiable. 
+
+\subparagraph{Other domains}
+Hilbert and Bernays note: for finite domains, we relied on integers
+only for simplicity. But we could have reduced it to a different
+finite domain of individuals, like letters.
+
+\paragraph{}
+But we run into the following difficulty: a concrete conception
+[representation] for the integers is not possible (in the sense that
+we can't write them all down).
+
+Essentially we need to presuppose that the integers constitute a
+domain of individuals, and therefore a ``complete totality''
+[\textit{fertige Gesamtheit}].
+
+\subsection{Problems of the infinite}
+
+\paragraph{}
+Frege demanded a proof of consistency before using a ``number series''
+as a completed totality. For Frege, such a proof should be an
+\emph{existence proof} (in the sense of a method of exhibition).
+
+\subparagraph{Problem with Frege's approach}
+The discussion here in Hilbert and Bernays is rather philosophical for
+my tastes.
+
+As I understand it (and I don't), Frege wanted to work in the domain
+of ``all conceivable unary predicates'', and then form the ``number series''
+out of them\dots somehow.
+
+Hilbert and Bernays cite Russell and Zermelo for dispelling this idea.
+
+Claus-Peter Wirth notes that Quine~\cite{quine1981mathematical}
+re-examines Frege's strategy for defining numbers. The problems Frege
+encounters is not from his generic strategy \emph{per se}, but from
+the ambient collection of all conceivable predicates leads to problems
+like Russell's paradox.
+
+The upshot is: the use of [infinitely many] numbers cannot be used
+willy-nilly. Problems arise from infinities.
+
+\subparagraph{``Number series''}
+The phrase ``number series'' appears to be the translation of
+\textit{Zahlenreihe}, which I think has more of a meaning of a
+``sequence of numbers''. This makes more sense to think of it as a
+recursive generation of numbers (i.e., a procedure for enumerating
+numbers), rather than a ``finished set'' of numbers.
+
+Mueller~\cite{mueller2006grundlagen} translates the phrase as
+``sequence of integers'', which supports this interpretation.
+
+\paragraph{}
+In light of these problems, we could consider using an infinite domain
+of individuals which is not a mere product of thought.
+
+We could try taking a domain from ``sense perception'' or ``physical reality''
+instead. This runs into the problem that, upon closer inspection, it
+eventually reduces to a \emph{perception} of an infinite domain. And
+this perception boils down to modeling it using an infinite sequence
+of numbers. So we're back where we started.
+
+\paragraph{Zeno's paradox}
+A typical example of this problem with infinities is Zeno's paradox.
+
+Recall the paradox: a finite distance can be traversed in finite
+time. The traversal includes infinitely many successive
+subprocesses. The traversal of the first half, then the next quarter,
+then the next eighth, and so on.
+
+If we are considering an actual motion, then these subtraversals must
+be genuine processes succeeding one another.
+
+\paragraph{Essence of the paradox}
+We usually refute this paradox with the argument that the sum of
+infinitely many temporal intervals may converge producing a finite
+duration.
+
+But this misses the essential point of the paradox: the paradox lies
+in the fact that an infinite succession, the completion of which we
+could not accomplish in the imagination (either in practice or even in
+principle), but should be accomplished in fact.
+
+\paragraph{Using modern physics}
+There are radical solutions to this paradox, Hilbert and Bernays note.
+Modern physics suggests it is not physically meaningful to divide a
+time interval into arbitrarily small subintervals.
+
+Even continuum mechanics models a fluid using a continuum of
+point-particles. 
+
+\paragraph{}
+One problem with this approach is that the mathematical model is based
+on a \emph{simplifying idealization} of physical reality.
+
+Another problem: the extrapolation from the mathematical model of
+physical reality must be self-consistent.
+
+Essentially, we end up back where we started.
+
+\paragraph{}
+In every case where we think we've found infinity directly exhibited
+by perception or intuition (like musical notes on octaves, or the
+color spectrum), we end up in a situation similar to the radical
+solution to Zeno's paradox. Upon closer inspection, infinity is not
+present at all: it emerges from mental extrapolation or interpolation.
+
+\subsection{Proof of consistency as impossibility proof; method of arithmetization}
+
+\paragraph{}
+Upon these considerations, the existence of an infinity ``manifold''
+[\textit{Gesamtheit\/}] cannot be determined by appealing to
+non-mathematical objects. Instead, the question must be solved within
+mathematics itself. But how should we begin such a solution?
+
+We're asked to do the impossible: producing infinitely many
+individuals is impossible in principle. Therefore an infinite domain
+of individuals can only be indicated by its structure (i.e., through
+relations holding among its elements).
+
+\subparagraph{Vicious circle}
+In other words, a proof must be given that for this domain certain
+formal relations can be satisfied.
+
+The existence of an infinite domain of individuals \emph{cannot be
+represented in any way other than through the satisfiability of
+certain logical formulas.}
+
+But these are exactly the kind of formulas we were led to investigate
+about the existence of an infinite domain of individuals.
+And their satisfiability was demonstrated by the exhibition of an
+infinite domain of individuals.
+
+Thus we have been led into a vicious circle.
+
+\paragraph{}
+The method of exhibition was a means to prove the
+consistency of an axiom system. We arrived here after recognizing that
+(for a finite domain of individuals) the consistency of a formula is
+equivalent to its satisfiability. 
+
+\paragraph{}
+The situation of an infinite domain of individuals is more complicated.
+We still have the property that the axiom system $\meta{A}$ is
+inconsistent if and only if it can prove $\Not{\meta{A}}$.
+
+The difficulty? We no longer have a ``comprehensible'' supply of
+combinations of graphs for the predicate variables. Consequently, from
+$\Not{\meta{A}}$ being invalid, we can no longer conclude we have some
+model of $\meta{A}$ at our disposal.
+
+\paragraph{}
+That is to say: the satisfiability of an axiom system is a sufficient
+condition for proving its consistency, it is no longer
+\emph{necessary} condition when using an infinite domain of individuals.
+
+Ultimately, this leads Hilbert and Bernays to conclude that to prove
+the consistency of an axiom system $\meta{A}$, we need to prove that
+$\meta{A}$ cannot lead to a contradiction.
+
+\subparagraph{Remark}
+Much of the reasoning here stems from intuitionistic constraints. I
+think \emph{classically}, Hilbert and Bernays is in error. But they
+are trying to address intuitionistic skeptics.
+
+\paragraph{}
+From this perspective, the formalization of logical inference (by
+Frege, Schr\"{o}der, Peano, and Russell) presents itself as an
+appropriate means to our desired ends. 
+
+\paragraph{Tasks before us}
+We arrive at the following tasks:
+\begin{enumerate}
+\item Formalize the rules of logical inference rigorously, turning
+  them into a comprehensible system of rules.
+\item Prove, for a given axiomatic system $\meta{A}$ (whose
+  consistency we're trying to determine), that no contradiction can be
+  deduced from $\meta{A}$.
+\end{enumerate}
+
+\paragraph{Method of Arithmetization}
+We don't have to repeat the same work for each axiomatic system.
+Instead we can invoke the method of arithmetization (as alluded to
+earlier). This can be characterized as follows:
+
+We seek an axiomatic system $\meta{A}$ with the following property:
+\begin{enumerate}
+\item $\meta{A}$ is comprehensible to such a degree that we can
+  determine no contradictions may be deduced from $\meta{A}$
+\item $\meta{A}$ has to be sufficiently comprehensive, in the
+  following sense: for any axiomatic system $\meta{B}$, we assume the
+  existence of a model $\meta{C}$ of $\meta{A}$, and we can construct
+  a model of $\meta{B}$ using the individuals from the model $\meta{C}$.
+\end{enumerate}
+
+\paragraph{}
+This then proves the consistency of axiom system $\meta{B}$.
+
+\subparagraph{Remark: G\"{o}del's Incompleteness}
+As I interpret G\"{o}del's incompleteness theorems, the problem with
+Hilbert and Bernays's plans thus outlined is the first step (stipulating
+the consistency of $\meta{A}$). We thus are reduced to relative
+consistencies ($\meta{B}$ is consistent provided $\meta{A}$ is consistent).
+
+\paragraph{}
+Hilbert and Bernays propose that arithmetic constitutes such a system
+$\meta{A}$. 
+
+\paragraph{}
+This ``reduction'' of axiomatic theories to arithmetic does not depend
+on arithmetic ``consists of intuitively producible facts''
+(Mueller: ``being a set of facts presentable to intuition'').
+
+Arithmetic doesn't need to be anything more than a ``formation of ideas''
+(Mueller: ``ideal structure'') which
+\begin{enumerate}
+\item we can prove consistent, and
+\item provides a systematic framework encompassing the axiom systems
+  of theoretical sciences.
+\end{enumerate}
+We can then prove the consistency of these axiomatic systems of
+theoretical sciences.
+
+Mueller translation:
+\begin{quote}
+The ``reduction'' of axiomatic theories to arithmetic does not depend upon
+arithmetic being a set of facts presentable to the intuition;
+%
+arithmetic need be no more than an ideal structure which we can prove
+consistent and which provides a systematic framework encompassing the
+axiom systems of the theoretical sciences;
+%
+because they are encompassed in this framework the idealizations of
+what is actually given which they involve will also be proved
+consistent.
+\end{quote}
+
+\paragraph{Summary of discussion}
+Hilbert and Bernays now recaps the discussion thus far:
+\begin{enumerate}
+\item we can use the method of exhibition to prove the consistency of
+  certain axiomatic systems;
+\item when an axiomatic system cannot be satisfied by any finite
+  domain of individuals, we run into problems using the method of exhibition.
+\item This is because we cannot take for granted the existence of an
+  infinite domain of individuals.
+\item We must provide a proof of consistency for using an infinite
+  domain of individuals.
+\end{enumerate}
+
+\paragraph{}
+In light of the failure of the ``positive'' method of deciding
+consistency, there is only one possibility left: we need to give a
+proof of consistency in the negative sense, i.e., a
+\emph{proof of impossibility}.
+And this requires formalizing logical inference.
+
+\paragraph{}
+If we are going to approach the task (of giving such a proof of
+impossibility), we must be clear it cannot be carried out using
+axiomatic-existential methods of inference.
+
+Instead, we must use only those kinds of inference which are free from
+idealizing assumptions of existence.
+
+\paragraph{}
+As a result of this deliberation, the following thought comes to mind:
+If this proof of impossibility can be carried out without
+axiomatic-existential assumptions, then shouldn't it also be possible
+to ``found'' [``ground''?] arithmetic directly in the same way and
+make the proof of impossibility completely superfluous?
+
+Hilbert and Bernays considers this question in the next chapter.

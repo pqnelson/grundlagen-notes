@@ -1,0 +1,24 @@
+\documentclass{book}
+\usepackage[screen]{macros}
+\input{notation}
+
+\title{Reading Notes on Hilbert and Bernays's \emph{Grundlagen}}
+\author{Alex Nelson}
+\date{November 12, 2024}
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+\include{tex/preface}
+
+\mainmatter
+\include{tex/ch1}
+
+\include{tex/ch2}
+
+\backmatter\nocite{*}
+{\footnotesize % to make it work with tocbibind
+\bibliographystyle{elements}
+\bibliography{grundlagen}}
+
+\end{document}

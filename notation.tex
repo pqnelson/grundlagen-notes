@@ -1,0 +1,26 @@
+\makeatletter
+
+\newif\ifgrundlagennotation
+\grundlagennotationtrue
+
+\let\og@exists\exists
+\def\exists#1{\ifgrundlagennotation(E#1)\else\og@exists#1\ldotp\fi}
+\def\Exists#1#2{\exists{#1}#2}
+\let\og@forall\forall
+\def\forall#1{\ifgrundlagennotation(#1)\else\og@forall#1\ldotp\fi}
+\def\Forall#1#2{\forall{#1}#2}
+\def\Not#1{\overline{#1}}
+\let\og@land\land
+\def\land{\ifgrundlagennotation\mathbin{\&}\else\og@land\fi}
+%% \let\og@lor\lor
+%% \def\lor{\ifgrundlagennotation\mathbin{\&}\else\og@lor\fi}
+
+\let\og@implies\implies
+\def\implies{\ifgrundlagennotation\mathbin{\longrightarrow}\else\og@implies\fi}
+
+\def\meta#1{\mathfrak{#1}}
+
+\def\FS0/{\mathsf{FS}_{0}}
+
+\makeatother
+\endinput

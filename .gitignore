@@ -1,0 +1,15 @@
+
+# autosaves
+*~
+
+# latex generated junk
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.dvi
+*.ps
+*.blg
+*.bbl
+*.brf
