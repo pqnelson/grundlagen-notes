@@ -1,22 +1,74 @@
-\chapter{Elementary Number Theory. --- Finitistic Inference and its Limits}
+\chapter[Elementary Number Theory]{Elementary Number Theory. --- Finitistic Inference and its Limits}
 
 \section{Method of intuitive consideration, its application in elementary number theory}
 
 \subsection{Notion of a numeral; ``smaller than'' relation; addition}
 
 \paragraph{} %  1
+The question has been raised whether we can just ``directly'' address
+the matter of existence and consistency.
 
-\paragraph{} %  2
+It's worth mentioning that this existential axiomatic approach is not
+``the original approach'' to mathematics.
 
-\paragraph{} %  3
+\paragraph{Euclid} %  2
+Euclid worked with a more contentual axiomatic method. The intuitive
+meaning of ``figures'' [the basic notions] was clear in Euclid's
+\emph{Elements}.
+
+Further, its axioms are not in ``existential form'' either. There is
+no presupposition that the domain of individuals consists of points
+and lines.
+
+Euclid does not work with existential axioms, but gives us
+constructional postulates instead.
+
+\paragraph{Constructional postulates} %  3
+Such ``constructional postulates'' tell us \emph{it is always possible
+to construct a line passing through two distinct points}, and \emph{it
+is possible to construct a circle centered at a given point with a
+given radius}.
 
 \paragraph{} %  4
+This only works if the postulates are viewed [\textit{angesehen werden\/}] as expressions [\textit{Austrucks\/}]
+of a known actuality [\textit{Tats\"{a}chlichen\/}] or of direct
+evidence [\textit{unmittelbaren Evidenz\/}].
+
+``It is well known'' the question regarding ``the scope of validity of
+geometry'' is contraversial (by which I think Hilbert and Bernays
+means: there is no single model of geometry; instead there are many
+\emph{non-Euclidean} geometries discovered in the 19th century).
+
+Hilbert and Bernays argues that a substantial advantage of formal
+axiomatics is that it makes the grounding of geometry
+\emph{independent} of this question.
 
 \paragraph{} %  5
+We're not concerned with these types of issues in elementary number
+theory. We don't need to worry about the character of knowledge of
+geometric matters.
+
+Furthermore, in elementary number theory (and elementary algebra), we
+find ``the purest'' manifestation of the ``standpoint of direct
+contentual thought'' which has evolved ``without axiomatic assumptions''.
 
 \paragraph{} %  6
+This methodological standpoint is characterized by ``thought
+experiments'' [\textit{Gedankenexperimenten\/}] with things that are
+assumed to be ``concretely present'' [\textit{konkrete vorgliegend\/}]
+such as numbers in number theory (or expressions of letters with
+numerical coefficients in elementary algebra).
 
 \paragraph{} %  7
+Hilbert and Bernays analyze this situation more closely in this
+chapter.
+
+In number theory, we have ``an initial thing'' and ``a process of progression''.
+We must fix both intuitively in some definite way. It is inessential
+how we do this, but the choice must be maintained.
+
+Hilbert and Bernays choose ``1'' as ``the initial thing'', and
+appending as a suffix ``1''.
 
 \paragraph{} %  8
 The things we obtain, starting with 1, by applying this progression,
@@ -25,6 +77,12 @@ we obtain guys like
 1,\quad11,\quad111,\quad1111,\dots
 \end{equation*}
 The process is just appending ``1'' to the previous entry in the sequence.
+
+\subparagraph{``Figures''}
+Hilbert and Bernays refers to the result of this construction process
+as ``figures'' [German: \textit{Figur\/}]. This is the first time this
+word appears in this chapter. I am uncertain what to make of its
+significance. 
 
 \subparagraph{Finitistic property}
 Critically, Hilbert and Bernays note that we have used a ``concrete
@@ -38,13 +96,23 @@ typed total functional programming language, then these properties are
 crucial (and are satisfied by algebraic data types).
 
 \paragraph{} %  9
+Openly announcing we're deviating from common usage of language,
+Hilbert and Bernays refers to these figures as ``numerals''.
 
-\paragraph{} % 10
+\paragraph{``Unambiguously recognizable'': tolerance of orthographics} % 10
+Hilbert and Bernays announce a willing tolerance in the orthographics
+of these figures. Presumably a certain degree of ambiguity arises when
+writing with pen on paper (the spacing between the figures, the height
+of the figures, the various possible serifs attached [or not] to
+figures, etc.) which we should understand and allow.
+
+They refer to this tolerance of orthographic variability a property
+called ``unambiguously recognizable''.
 
 \paragraph{Communication signs disjoint from numerals} % 11
 There is another class of signs which Hilbert and Bernays call
 ``communication signs''. These are fundamentally different than
-numerals, because numerals constitute the objects of number theory.
+numerals, because numerals constitute the ``objects'' of number theory.
 
 \subparagraph{In $\FS0/$}
 If I were to reflect this choice in $\FS0/$, it would make sense to
@@ -52,26 +120,128 @@ introduce a primitive atom encoding $1$ and then work with
 tuples of $1$ as numerals. All other atoms would be ``communication signs''.
 
 \paragraph{} % 12
+A ``symbol for communication'' by itself is also a figure.
 
-\paragraph{} % 13
+Therefore symbols for communication should also be
+``unambiguously recognizable''.
+
+Within the theory (of elementary number theory), no ``symbol of communication''
+is made into an ``object of consideration'', but it merely serves as a
+means for concise, clear formulation of facts, assertions,
+assumptions.
+
+(This seems to be borrowing a similar notion from Russell and
+Bernays's \textit{Principia Mathematica}.)
+
+\paragraph{Symbols of communication in number theory} % 13
+In elementary number theory, Hilbert and Bernays offers the following
+symbols of communication:
+\begin{enumerate}
+\item ``small German letters'' [i.e., Fraktur letters] as variables
+  for numerals
+\item the customary number symbols as abbreviations for definite
+  numerals (e.g., ``2'' for ``11'', ``3'' for ``111'', etc.)
+\item symbols for certain formation processes and operations of
+  calculation, which may be applied to definite as well as indefinite
+  numerals (e.g., ``$\mathfrak{a}+11$'')
+\item the symbol ``='' to communicate ``figural coincidence'', and the
+  symbol ``$\neq$'' to communicate difference of numerals; the symbols
+  ``$<$'' and ``$>$'' will be used for the relation of magnitude
+  (which will be discussed in a minute)
+\item parentheses as symbols for the order of processes, where this
+  order is not clear without further explanation.
+\end{enumerate}
 
 \paragraph{} % 14
+The way these symbols work and their contentual meanings will be made
+clear as we work our way through elementary number theory.
 
-\paragraph{} % 15
+\paragraph{Relation of magnitude} % 15
+The first thing Hilbert and Bernays does: clarify the relation of
+magnitude. Let numeral $\mathfrak{a}$ be different from
+$\mathfrak{b}$. How is this possible?
+
+Both must begin with ``1'' and iteratively append ``1'' finitely many
+times. But one stops whereas the other continues; i.e., one is the
+``initial segment'' of the other.
+
+Since these are different numerals, one must be the \emph{proper}
+initial segment of the other.
 
 \paragraph{} % 16
+If the numeral $\mathfrak{a}$ coincides with an initial segment of
+$\mathfrak{b}$, then we say ``$\mathfrak{a}$ is smaller than $\mathfrak{b}$''
+(or equivalently, ``$\mathfrak{b}$ is greater than $\mathfrak{a}$'').
+For this, we use the notation
+\begin{equation*}
+\mathfrak{a}<\mathfrak{b},\qquad\mathfrak{b}>\mathfrak{a}.
+\end{equation*}
 
-\paragraph{} % 17
+\subparagraph{Strict and total}
+It follows from the previous consideration that for any numerals
+$\mathfrak{a}$ and $\mathfrak{b}$, exactly one of the following must
+always hold:
+\begin{enumerate}
+\item $\mathfrak{a} < \mathfrak{b}$,
+\item $\mathfrak{a} = \mathfrak{b}$,
+\item $\mathfrak{a} > \mathfrak{b}$.
+\end{enumerate}
+Moreover, these are mutually exclusive possibilities.
+
+\subparagraph{Transitivity}
+Further, ``it is obvious'' that
+if $\mathfrak{a}<\mathfrak{b}$ and $\mathfrak{b}<\mathfrak{c}$,
+then $\mathfrak{a}<\mathfrak{c}$.
+
+I think this is not true, I think that we could prove this claim. But
+I am uninterested in the tedium needed to prove it.
+
+\paragraph{Addition operator} % 17
+When we have numerals $\mathfrak{b}<\mathfrak{a}$, we can identify the
+initial segment of $\mathfrak{a}$ which coincides with
+$\mathfrak{b}$. Then we can identify a numeral $\mathfrak{c}$ which
+coincides with the remaining segment of $\mathfrak{a}$.
+
+If we're given $\mathfrak{b}$ and $\mathfrak{c}$, then we can
+construct a new numeral by appending $\mathfrak{c}$ after
+$\mathfrak{b}$. This defines addition, and we write
+$\mathfrak{b}+\mathfrak{c}$ for this operation.
 
 \paragraph{} % 18
+If a numeral $\mathfrak{b}<\mathfrak{a}$ coincides with a segment of
+$\mathfrak{a}$, then the remaining segment of $\mathfrak{a}$ is again
+a numeral $\mathfrak{c}$. 
 
-\paragraph{} % 19
+In this case, we have a representation for $\mathfrak{a}$
+of the form $\mathfrak{b}+\mathfrak{c}$, where $\mathfrak{c}$ is a
+numeral.
 
-\paragraph{} % 20
+Moreover, we have
+\begin{equation*}
+\mathfrak{b} < \mathfrak{b} + \mathfrak{c}.
+\end{equation*}
+
+For a concrete example, ``2'' mean ``11'' and ``3'' means ``111'', and
+``5'' means ``11111''. We see that ``$2 + 3$'' stands for appending
+``111'' (i.e., three appending operations of ``1'') to ``11'', giving
+us ``11111''. And that's precisely ``5''.
+
+\paragraph{Example of a false proposition} % 19
+The proposition ``$2+3=4$'' is an example of a false proposition.
 
 \subsection[Laws of calculation]{Laws of calculation; mathematical induction; multiplication; divisibility; prime number}
 
+\paragraph{} % 20
+Hilbert and Bernays now turn their attention to proving the validity
+of the laws of calculation involving this newly defined ``addition''
+operation.
+
 \paragraph{} % 21
+The ``laws of calculation'' are regarded as sentences involving
+arbitrary numerals. They are seen to hold by ``intuitive consideration''.
+
+I am taking this to mean that the ``discussions'' which follow are
+examples of what qualifies as an ``intuitive consideration''.
 
 \paragraph{} % 22
 
