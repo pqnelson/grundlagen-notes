@@ -340,11 +340,86 @@ examples of what qualifies as an ``intuitive consideration''.
 
 \paragraph{} % 68
 
-\section{The finitistic standpoint; transgression of this standpoint already in number theory}
+\section[The finitistic standpoint]{The finitistic standpoint; transgression of this standpoint already in number theory}
 
 \subsection{Logical characterization of the finitistic standpoint}
 \paragraph{} % 69
 
+The previous sections in this chapter was meant to show-by-example how
+to apply and implement ``direct contentual inference'' [that takes
+  place in] thought-experiments on ``intuitively conceived objects''
+and is ``free of axiomatic assumptions''.
+
+Hilbert and Bernays call this kind of inference ``finitistic''.
+
+(This paragraph is a couple gigantic sentences in the German original.)
+
+\subparagraph{Finitistic attitude}
+Hilbert and Bernays call the methodological attitude underlying this
+kind of inference as the ``finitistic'' attitude or the ``finitistic''
+standpoint.
+
+In the same sense, they speak of ``finitistic concept formations'' and
+``finitistic assertions''.
+
+\subparagraph{Finitistic criteria}
+Each use of the word ``finitistic'' conveys the idea that the relevant
+consideration, assertion, or definition is confined to
+\begin{enumerate}
+\item objects that are conceivable in principle\footnote{The German
+\textit{vorstellbarkeit} translates to ``conceivable'' or
+``imaginable'', fairly unambiguously: \textit{vorstell-} ``imagine,
+conceive'' + \textit{-bar} ``-able''. Here
+\textit{grunds\"{a}tzlichen} means ``based on principle'', but can
+also mean ``fundamental, elementary, principal''.}
+  [Ger.: \textit{der grunds\"{a}tzlichen vorstellbarkeit von objekten\/}], and
+\item processes that can be ``effectively executed'' [effectively computable]\footnote{The
+German \textit{ausf\"{u}hrbarkeit} is too weird for me to grasp. It
+derives from \textit{ausf\"{u}hrbar} ``executable, feasible'' but also
+``exportable'', which itself derives from \textit{ausf\"{u}hren} [to
+  carry out, execute, elaborate on, explain] + \textit{-bar}
+[-able]. The \textit{-keit} [-ness] suffix appears to have
+significance beyond me, it's a variant form of
+\textit{-heit}. Wikipedia's German page for ``Algorithm'' has the
+second requirement be ``\textit{Jeder Schritt des Verfahrens muss
+  tats\"{a}chlich ausf\"{u}hrbar sein (Ausf\"{u}hrbarkeit).\/}''
+(English: Each step of the procedure must actually be executable (feasibility).).} [Ger.: \textit{ausf\"{u}hrbarkeit}] in principle [Ger: \textit{grunds\"{a}tzlichen}],\footnote{The second criterion in original Ger.: \textit{der grunds\"{a}tzlichen ausf\"{u}hrbarkeit von Prozessen}}
+\end{enumerate}
+and thus it remains within the scope of a concrete treatment [Ger.:
+  \textit{und sich somit im Rahmen konkreter Betrachtung
+    vollzieht\/}].\footnote{The phrase ``\textit{und sich somit\/}''
+means ``and thus''; \textit{somit\/} means ``remains'' or ``takes
+place in''; \textit{im Rahmen} means ``as a part of'', ``in the scope of''; \textit{Betrachtung\/} means
+``treatment'' or ``consideration'', \textit{konkreter Betrachtung\/}
+means ``concrete treatment'' (or ``concrete consideration''); \textit{vollzieht\/} means ``take place''.}
+The
+German original for the itemization and final phrase:
+\begin{quote}
+\dots der grunds\"{a}tzlichen vorstellbarkeit von objekten sowie der von objekten sowie der grunds\"{a}tzlichen ausf\"{u}hrbarkeit von Prozessen h\"{a}lt und sich somit im Rahmen konkreter Betrachtung vollzieht.
+\end{quote}
+The itemization seems clear in spirit by the repeated use of
+``\textit{der\/}''.
+
+\subparagraph{Finitistic = Computable + Constraint}
+Also note that the second criterion, I think, anachronistically reads as
+``computable processes''. In which case, it's the first criterion
+(``objects are conceivable in principle'') which restricts
+``finitary'' as a proper subset of ``computable''.
+
+But it is unclear to me which criterion distinguishes finitism from
+constructivism. I would hazard to guess it's the first criterion,
+since the second criterion is satisfied by intuitionistic higher-order
+logic.
+
+Also note that page 43, \pilcrow\ref{ch2:par124}, Brouwer's
+intuitionism is discussed as an extension of finitism allowing for
+inferences on propositions without knowing their intuitive
+content. This seems to suggest Brouwer's intuitionism violates the
+first criterion (``objects are conceivable in principle''), which
+supports my hypothesis that finitism is demarcated as intuitionism
+restricted by an additional criterion.
+
+\subparagraph{Alternative translation}
 Mueller~\cite[p.44]{mueller2006grundlagen} translates this paragraph
 as:
 \begin{quote}
@@ -364,34 +439,146 @@ complete; that it is carried out in the framework of concrete thought.
 \end{quote}
 
 \paragraph{} % 70
+Hilbert and Bernays now will emphasize aspects of ``the usage of
+logical forms of judgement in finitistic thinking'' by working on
+propositions on numerals as examples.
 
-\paragraph{} % 71
+\paragraph{Universal judgements} % 71
+A ``universal judgement'' [Ger.: \textit{allgemeines
+    Urteil\/}\footnote{Recall, since Kant, the German word
+  \textit{Urteil\/} has been used as ``judgement'' in Logic.}] about numerals can be given a finitistic
+interpretation ``only in a hypothetical sense'' [Ger.: \textit{hypothetisches sinn\/}],
+as a proposition about every arbitrary [Ger.: \textit{jedwede\/}]
+numeral that is effectively given/presented [Ger.: \textit{vorgelegte\/}].
 
-\paragraph{} % 72
+A universal judgement expresses a law [Ger.: \textit{Gesetz\/}] which
+has to be proven true for each individual case [Ger.: \textit{Einzelfall\/}].
 
-\paragraph{} % 73
+\paragraph{Existential judgements} % 72
+Hilbert and Bernays call existential judgements a kind of ``partial
+judgement'' [Ger.: \textit{Partialurteil\/}]. They say it is an
+``incomplete communication'' [Ger.: \textit{unvollst\"{a}ndige Mitteilung\/}]
+of a ``more precisely determined'' statement [Ger.: \textit{genauer bestimmten aussage\/}].
+It seems that they mean it is a sort of argot, a stage instruction.
 
-\paragraph{} % 74
+For example, ``There exists a numeral $\mathfrak{n}$ such that
+$\mathfrak{A}(\mathfrak{n})$'' consists either in the direct
+presentation of a numeral satisfying the predicate, or presenting a
+procedure for constructing such a numeral. In the latter case, the
+procedure has to terminate after finitely many steps (Hilbert and
+Bernays say that it has to include a definite limit to the number of
+steps). --- I can't help but read this as ``the procedure must be a
+total function''.
 
-\paragraph{} % 75
+\subparagraph{Partial function?}
+It's unclear to me how to interpret this discussion. Should we think
+of an existential judgement as a partial function on numerals? Is that
+what Hilbert and Bernays mean by ``incomplete communication of a procedure''?
+
+\paragraph{Combined universal and existential judgements} % 73
+Mixed judgements involving both universal and existential judgements
+are interpreted as one might expect. For example, ``For any numeral
+$\mathfrak{a}$ satisfying $\mathfrak{A}(\mathfrak{a})$, there exists a
+numeral $\mathfrak{b}$ such that
+$\mathfrak{B}(\mathfrak{a},\mathfrak{b})$ holds.''
+
+We finitistically interpret this as an ``incomplete communication'' of
+a procedure which, given any numeral $\mathfrak{a}$ satisfying the condition
+$\mathfrak{A}(\mathfrak{a})$, permits us to find a numeral
+$\mathfrak{b}$ such that $\mathfrak{B}(\mathfrak{a},\mathfrak{b})$ holds.
+
+\paragraph{Negation} % 74
+Negation requires great care, from the finitistic perspective, and so
+several paragraphs will be dedicated to investigating it.
+
+\paragraph{Negating ``Elementary'' Judgements} % 75
+Negating an ``Elementary'' [Ger.: \textit{elementaren\/}] judgement
+concerning a question decidable by direct intuitive observation, is
+straightforward.
+
+The example given: if $\mathfrak{k}$ and $\mathfrak{l}$ are definite
+numerals, then it can be directly observed whether
+$\mathfrak{k}+\mathfrak{k}=\mathfrak{l}$ is the case or not.
 
 \paragraph{} % 76
+The negation of elementary judgements merely requires checking if an
+``intuitive decision'' deviates from the state of affairs described by
+the judgement.
 
-\paragraph{} % 77
+\subparagraph{Excluded middle for elementary judgements}
+Curiously, Hilbert and Bernays writes, ``and for an elementary
+judgement it may be taken for granted that either the judgement itself
+or its negation holds.'' (Pg 33) In other words, the law of the
+excluded middle holds for elementary finitistic judgements.
 
-\paragraph{} % 78
+\paragraph{Negating quantified judgements} % 77
+For a universal or existential judgement (i.e., a judgement with
+quantifiers), it is not immediately obvious what should count as its
+negation in the finitistic sense.
+
+\paragraph{Negating existential judgements} % 78
+For an existential assertion, what is its negation? Negating ``there is a
+numeral $\mathfrak{n}$ with property $\mathfrak{A}(\mathfrak{n})$''
+may be meant in a vague [\textit{unscharfem\/}] sense [\textit{Sinne\/}]: as the statement that we do not have a
+numeral with this property at our disposal (i.e., that a number with this property is not available to us for specification).
+Such a statement, however, has no ``objective significance''
+[\textit{objecktive Bedeutung\/}] because
+it is relative to an ``accidental state of knowledge''.
+
+However, if we wish to assert the unavailablility of a numeral
+$\mathfrak{n}$ with the property $\mathfrak{A}(\mathfrak{n})$
+independently of our state of knowledge [\textit{Erkenntniszustand\/}], then one can express this
+finitistically only by an assertion of impossibility (stating a
+numeral $\mathfrak{n}$ \emph{cannot} have property $\mathfrak{A}(\mathfrak{n})$).
 
 \paragraph{} % 79
 
+
 \paragraph{} % 80
+Unlike negating elementary judgements, the existential proposition and
+its [finitistic] negation are not propositions about the only two
+possible results of \emph{one and the same decision}. Instead they
+correspond to two distinct epistemic possibilities: the discovery of a
+numeral with the given property, and the insight into the law about
+numerals.
 
-\paragraph{} % 81
+Claus-Peter Wirth helpfully notes that this appears to mean that the
+negation of $\Exists{x}{\mathfrak{A}(x)}$ is
+$\Not{\Exists{x}{\mathfrak{A}(x)}}=\Forall{x}{\Not{\mathfrak{A}(x)}}$.
+What is different from the classical situation, however, is that in
+general $\Forall{x}{\Not{\mathfrak{A}(x)}}\lor\Exists{x}{\mathfrak{A}(x)}$
+does not hold in the finitistic sense.
 
-\paragraph{} % 82
+\paragraph{Excluded law fails here} % 81
+Hilbert and Bernays note that the law of the excluded middle fails to
+holds with negating existential judgements.
+
+\paragraph{Negating universal judgements} % 82
+For a judgement of the form ``For every numeral $\mathfrak{n}$ we have
+$\mathfrak{A}(\mathfrak{n})$'', it does not yet make finitistic sense
+to negate such a thing. The validity of $\mathfrak{A}(\mathfrak{n})$
+can be refuted with a counterexample, but this no longer constitutes
+the contradictory opposite of the universal judgement.
 
 \paragraph{} % 83
+Finding a counterexample is not the only way to refute a universal
+judgement. When deducing the consequences of a universal judgement, we
+might run into a contradiction in some other way. This does not
+eliminate the difficulty, it just complicates things.
+
+Namely it is neither logically apparent that a universal judgement on
+numerals must either hold or else lead to a contradiction in its
+consequences (i.e., is refutable)\footnote{For example, an incomplete
+theory will have universal judgements which are neither provable nor refutable.}, nor is it self-evident that such a
+judgement --- if it is refutable --- is refutable with a
+counterexample.\footnote{Claus-Peter Wirth notes this is true with
+classical axiomatic theories as well.}
 
 \paragraph{} % 84
+The reason for negation being this complicated is all Brouwer's fault,
+blame him. Brouwer argues that it's invalid to apply the law of
+excluded middle for ``infinite totalities''. Finitistic negation
+inherits this quality.
 
 \subsection{The ``tertium non datur'' for integers; the least-integer principle}
 
@@ -466,20 +653,20 @@ complete; that it is carried out in the framework of concrete thought.
 
 \paragraph{} % 118
 
-\section{Investigations on the direct finitistic grounding of arithmetic; return to the previous way of posing the problem; proof theory}
+\section[Direct Finitistc Grounding of Arithmetic]{Investigations on the direct finitistic grounding of arithmetic; return to the previous way of posing the problem; proof theory}
 % 119
 
 \paragraph{} % 119
 
-\paragraph{} % 0
+\paragraph{} % 120
 
-\paragraph{} % 1
+\paragraph{} % 121
 
-\paragraph{} % 2
+\paragraph{} % 122
 
-\paragraph{} % 3
+\paragraph{} % 123
 
-\paragraph{} % 4
+\paragraph{}\label{ch2:par124}\ignorespaces% 124
 
 \paragraph{} % 5
 

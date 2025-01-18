@@ -485,16 +485,22 @@ We also need to consider ``graphs'' of predicates, i.e., enumerating
 the truth-value for predicates for every possible combination of
 individuals.
 
+% 48
 \paragraph{}
 For finite domains, this boils down predicate logic to a purely
 combinatorial state of affairs.
 
+% 49
 \paragraph{}
 If we have a domain with $n$ individuals, then the graph for a $k$-ary
-predicate requires $n^{k}$ rows. This also means that there are
-$2^{n^{k}}$ possible distinct $k$-ary predicates (since each row could
-be true or false).
+predicate requires $n^{k}$ rows (think of this as a $k$-dimensional
+table with $n$ rows in each dimension, which could be ``flattened'' to
+an $n^{k}$ row table).
 
+This also means that there are $2^{n^{k}}$ possible distinct $k$-ary
+predicates (since each row could be true or false).
+
+% 50
 \paragraph{}
 If we have a formula with predicates $R_{1}$, \dots, $R_{t}$ each with
 arity $k_{1}$, \dots, $k_{t}$ (respectively), then we see there are
@@ -613,16 +619,19 @@ $\Not{\Not{\meta{F}}}$ is true (and therefore $\meta{F}$ cannot be satisfiable).
 We return to our problem of consistency, and we assume that we have
 formed a single formula $\meta{A}$ for our axioms conjoined together.
 
+% 61
 \paragraph{}
 For a given domain of individuals, the questions of satisfiability and
 validity boil down to testing it out (at least, in principle).
 
 If we have determined a formula is valid on the given domain of
-individuals, then we may treat it as a ``model'' (their term) for the
+individuals, then we may treat it as a ``model'' [German:
+\textit{Modell\/}] (their term) for the 
 theory where the axioms are satisfied. This also proves the
 consistency of the theory. Hilbert and Bernays calls this the
 ``method of exhibition''.
 
+% 62
 \paragraph{}
 As an example, let us consider the axioms for planar geometry (from
 \pilcrow\ref{paragraph:ch1:planar-geometry-axiom-start} \textit{et seq.}).
@@ -953,12 +962,17 @@ appropriate means to our desired ends.
 \paragraph{Tasks before us}
 We arrive at the following tasks:
 \begin{enumerate}
-\item Formalize the rules of logical inference rigorously, turning
+\item\label{item:Tasks-before-us:formalize-logic}%
+Formalize the rules of logical inference rigorously, turning
   them into a comprehensible system of rules.
 \item Prove, for a given axiomatic system $\meta{A}$ (whose
   consistency we're trying to determine), that no contradiction can be
   deduced from $\meta{A}$.
 \end{enumerate}
+Note: it is unclear to me, regarding
+point~\ref{item:Tasks-before-us:formalize-logic}, if this excludes
+the possibility of axiom schemes (which could not possibly be
+``comprehensible'' in the sense Hilbert and Bernays have used the term).
 
 \paragraph{Method of Arithmetization}
 We don't have to repeat the same work for each axiomatic system.
